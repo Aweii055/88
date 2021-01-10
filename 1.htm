@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href = "css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src= "http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<style type="text/css">
+		p{
+			color:red;
+			margin:5px;
+			cursor:pointer;
+		}
+		p:hover{
+			background:yellow;
+		}
+		.rice1{
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			z-index: 0;
+			background: rgba(0,0,0,0.5);
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.X{
+			position: fixed;
+			top:0;
+			right: 0;
+			z-index: 10;
+			background:  rgba(0,0,0,0.5);
+			display: flex;
+			
+		}
+
+
+	</style>
+</head>
+<body>
+<article id = "profile">
+	 <div class = "inner">
+	
+	<h2>關於我們的簡介</h2>
+
+</div>
+	 </article>
+	 
+	<h3>超級飯桶歡迎您的光臨
+</h3>
+
+<h3>在環境上面在意乾淨整潔、舒適，努力提供有溫度的服務，
+希望大家外食也能吃得美味又健康！
+</h3>
+<h3>關於我們的特色～
+採用當日新鮮蔬菜,加上特調醬汁所呈現的肉排,絕對能滿足您的味蕾</h3>
+<p>點我查看我們的大圖</p>
+	<div class="rice1">
+		
+		
+	<a href="http://120.105.150.46/hakkaonline/u0958035/shop/" target="_blank"><img src="及.jpg"></a>
+	<div class="X" >
+		<img src="X.png" width="100" height="100">
+	</div>
+	
+
+
+
+	<script type="text/javascript">
+		$('p').click(function(){
+			$('.rice1').slideToggle();
+		});
+		$('p').click(function(){
+			$('.X').slideToggle();
+		});
+		$('.X').click(function(){
+			$('.rice1').slideToggle();
+		});
+		$('.X').click(function(){
+			$('.X').slideToggle();
+		});
+	</script>
+
+</body>
+</html>
